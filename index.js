@@ -5,7 +5,7 @@ let data ;
 let datalength =0;
 
 async function getData(){
-    const res = await fetch ("https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=d90e5439d81b428a80ad09f9a694c9f3");
+    const res = await fetch ("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d90e5439d81b428a80ad09f9a694c9f3");
     const result = await res.json();
     data = result.articles;
     datalength = data.length;
